@@ -18,7 +18,7 @@ public class LibraryManager : ILibraryManager
 
     public void AddBook(Book book)
     {
-        if (book != null && !string.IsNullOrEmpty(book.Articul)) // Check for Articul existence
+        if (book != null && !string.IsNullOrEmpty(book.Articul)) // Check1 for Articul existence
         {
             // Check if the book with the same Articul already exists
             if (books.Any(b => b.Articul == book.Articul))
